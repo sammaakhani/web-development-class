@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="calculator.css">
+   <script src="calculator.js"> </script>
+</head>
+<body>
+   <forms class="calculator" name="calculator">
+      <!-- Screen -->
+      <div class="screen" name="screen">
+         <form>
+            <input class="screen-style"  type="number" name="screen">
+         </form>   
+      </div>
+      <!-- <span class="ind"> -->
+      <!-- buttons -->
+      <!-- first row -->
+      <div>
+         <input class="button" id  = "first-row" type="button" value="C" name="C" onclick= "calculator.C.value += '0' ">
+         <input class="button" id  = "first-row" type="button" value="." name= "point" onclick= "calculator.point.value += '.' ">
+         <input class="button" id  = "first-row" type="button" value="%">
+         <input class="button" id  = "opt" type="button" value="/">
+      </div>
+      <!-- Second row -->
+      <div>
+         <input class="button" id  = "numb" type="button" value="7" name="seven" onclick="screen.seven.value += 7">
+         <input class="button" id  = "numb" type="button" value="8">
+         <input class="button" id  = "numb" type="button" value="9">
+         <input class="button" id  = "opt" type="button" value="*">
+      </div>
+      <!-- Third row -->
+      <div>
+         <input class="button" id  = "numb" type="button" value="4">
+         <input class="button" id  = "numb" type="button" value="5">
+         <input class="button" id  = "numb" type="button" value="6">
+         <input class="button" id  = "opt" type="button" value="-">
+      </div>
+      <!-- Fourth row -->
+      <div>
+         <input class="button" id  = "numb" type="button" value="1">
+         <input class="button" id  = "numb" type="button" value="2">
+         <input class="button" id  = "numb" type="button" value="3">
+         <input class="button" id  = "opt" type="button" value="+">
+      </div>
+      <!-- Fifth row -->
+      <div>
+         <input class="button" id  = "numb" type="button" value="0">
+         <input class="button" id  = "numb" type="button" value="00">
+         <!-- icon in the button -->
+         <button class="button ">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+         </button>
+         <input class="button" id  = "opt" type="button" value="=">
+      </div>
+   </forms>
+</body>
+</html>
